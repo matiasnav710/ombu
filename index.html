@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Panel UI Demo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Page Title -->
+    <title>Panel UI Demo</title>
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="content/css/site.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo"><img width="130" src="content/images/logo.svg" alt="Panel UI Logo" /></a>
+            <h1 class="mb-0">Panel UI Demo</h1>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Body Content -->
+    <div class="body-content container">
+
+        <!-- Main -->
+        <main class="main">
+
+            <!-- Text Block -->
+            <section class="mb-40">
+                <p><strong>Panel UI</strong> is a web framework that enables the display of content in a modal sidebar
+                    (panel) or a split view. Panel UI is easy to use—just add a data attribute to regular links. This
+                    makes it simple to transform standard websites into dynamic user interfaces, supporting tasks that
+                    require single views, multi-step workflows, or side-by-side comparisons. Panel UI helps provide an
+                    intuitive user experience for complex tasks.</p>
+            </section>
+            <!-- Text Block -->
+
+            <!-- Text Block -->
+            <section class="mb-40">
+                <h2>Containers</h2>
+                <p>In the Panel UI framework, there are three content containers.</p>
+            </section>
+            <!-- Text Block -->
+
+            <!-- Text Block -->
+            <section class="mb-40">
+                <h3 class="d-flex align-items-center">
+                    <span class="mr-10"><img width="30" src="content/images/fullscreen.svg" alt="Fullscreen Icon" /></span>
+                    Full Screen
+                </h3>
+                <h4 class="mb-0">Data attribute: <i>none</i></h4>
+                <p class="my-30">In Panel UI, the default browser display of content is referred to as Full Screen. Links with no data
+                    attribute retain the default browser behavior of the new content fully replacing the previous
+                    content. Panel UI offers multiple ways a user can transition the view of content from a Panel or
+                    Split View to Full Screen.</p>
+                <h4>Use Case</h4>
+                <ul>
+                    <li>Links within text, e.g. help text, paragraph text</li>
+                    <li>Pointers to other web pages</li>
+                    <li>Pointers to views that are lists of objects</li>
+                </ul>
+                <h4>Examples</h4>
+                <div class="box d-inline-block">
+                    <ul class="list-unstyled my-0">
+                        <li><a href="#">List</a></li>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Form</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Text Block -->
+
+            <!-- Text Block -->
+            <section class="mb-40">
+                <h3 class="d-flex align-items-center">
+                    <span class="mr-10"><img width="30" src="content/images/panel.svg" alt="Panel Icon" /></span>
+                    Panel
+                </h3>
+                <h4 class="mb-0">Data attribute: <i>data-panel-open</i></h4>
+                <p class="my-30">Links with the attribute data-panel-open present their content in a modal sidebar, or panel, that slides in from the right of the current view. While a panel is shown the background content is not interactive but remains visible to maintain the context of the current task. An open panel can be expanded into a Full Screen view by selecting the Full Screen action in the panel header.</p>
+                <h4>Use Case</h4>
+                <p>The best use for a panel is to offer quick looks at data and allow the user to perform simple tasks like object creation.</p>
+                <ul>
+                    <li>Pointers to objects</li>
+                    <li>Object creation actions</li>
+                    <li>Object editing actions</li>
+                </ul>
+                <h4>Examples</h4>
+                <div class="box d-inline-block">
+                    <ul class="list-unstyled my-0">
+                        <li><a href="#" class="d-inline-flex align-items-center">List <span class="ml-10"><img width="15" src="content/images/panel-open.svg" alt="Panel Open Icon"></span></a></li>
+                        <li><a href="#" class="d-inline-flex align-items-center">Item 1 <span class="ml-10"><img width="15" src="content/images/panel-open.svg" alt="Panel Open Icon"></span></a></li>
+                        <li><a href="#" class="d-inline-flex align-items-center">Item 2 <span class="ml-10"><img width="15" src="content/images/panel-open.svg" alt="Panel Open Icon"></span></a></li>
+                        <li><a href="#" class="d-inline-flex align-items-center">Form <span class="ml-10"><img width="15" src="content/images/panel-open.svg" alt="Panel Open Icon"></span></a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Text Block -->
+
+            <!-- Text Block -->
+            <section class="mb-40">
+                <h3 class="d-flex align-items-center">
+                    <span class="mr-10"><img width="30" src="content/images/split-view.svg" alt="Split View Icon" /></span>
+                    Split View
+                </h3>
+                <h4 class="mb-0">Data attribute: <i>data-splitview-open</i></h4>
+                <p class="my-30">Links with the attribute data-splitview-open cause the view to be split in half, with the current content being presented on the left and the new content on the right. Both sides of the screen are interactive. In a split view, all links behave like the browser default, no matter the data attribute associated with them. </p>
+                <h4>Use Case</h4>
+                <p>The best use for a split view is for complex tasks that involve comparing or translating data from one view to another.</p>
+                <ul>
+                    <li>Tabs (Split View enables users to easily compare the content of two tabs side-by-side)</li>
+                </ul>
+                <h4>Examples</h4>
+                <div class="box d-inline-block">
+                    <ul class="list-unstyled my-0">
+                        <li><a href="#" class="d-inline-flex align-items-center">List <span class="ml-10"><img width="15" src="content/images/split-view2.svg" alt="Split View Icon"></span></a></li>
+                        <li><a href="#" class="d-inline-flex align-items-center">Item 1 <span class="ml-10"><img width="15" src="content/images/split-view2.svg" alt="Split View Icon"></span></a></li>
+                        <li><a href="#" class="d-inline-flex align-items-center">Item 2 <span class="ml-10"><img width="15" src="content/images/split-view2.svg" alt="Split View Icon"></span></a></li>
+                        <li><a href="#" class="d-inline-flex align-items-center">Form <span class="ml-10"><img width="15" src="content/images/split-view2.svg" alt="Split View Icon"></span></a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Text Block -->
+
+            <!-- Text Block -->
+            <section class="mb-40">
+                <h3>Implementation Guide</h3>
+                <p class="my-30">TBD</p>
+            </section>
+            <!-- Text Block -->
+
+        </main>
+        <!-- Main -->
+
+        <!-- Aside -->
+        <aside class="aside">
+            <h2>Reference Links</h2>
+            <ul class="list-unstyled my-0">
+                <li><a href="#">Source Code</a></li>
+                <li><a href="#">Specification</a></li>
+            </ul>
+        </aside>
+        <!-- Aside -->
+
+    </div>
+    <!-- Body Content -->
+
+</body>
+
+</html>

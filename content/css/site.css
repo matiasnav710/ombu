@@ -1,0 +1,252 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none !important;
+}
+
+::-moz-selection {
+    background: #007bff;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #007bff;
+    color: #fff;
+    text-shadow: none;
+}
+
+body {
+    font-size: 17px;
+    line-height: 1.41;
+    color: #44545F;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+p:last-child {
+margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #2B353B;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.0625rem;
+}
+
+h4 {
+    color: #2B353B;
+    font-size: 0.9375rem;
+    letter-spacing: 0.2px;
+    margin-bottom: 0.5rem;
+}
+
+
+a {
+    color: #0086B2;
+    text-decoration: none;
+}
+
+
+a:focus,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    padding-left: 1.875rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+}
+
+
+
+/* ==========================================================================
+	Header
+========================================================================== */
+
+.site-header {
+    background-color: #fff;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #DEE6EB;
+}
+
+.site-header .container {
+    max-width: 85rem;
+}
+
+.site-header h1 {
+    margin-top: 1rem;
+}
+
+/* ==========================================================================
+	Body Content
+========================================================================== */
+
+.body-content {
+    padding: 2rem 0;
+}
+
+
+/* ==========================================================================
+	Box
+========================================================================== */
+
+.box {
+    border: 1px solid #C3D1DA;
+    padding: 1rem;
+    min-width: 8.85rem;
+    border-radius: 0.5rem;
+}
+
+
+/* ==========================================================================
+	Reusable Generic Classes
+========================================================================== */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 75rem;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-40 {
+    margin-bottom: 2.5rem;
+}
+
+.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.my-30 {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+
+.mr-10 {
+    margin-right: 0.625rem;
+}
+
+.ml-10 {
+    margin-left: 0.625rem;
+}
+
+
+
+/* ==========================================================================
+	Media Queries
+========================================================================== */
+
+@media (min-width: 992px) {
+    .body-content {
+        display: flex;
+    }
+    .main {
+        flex: 1;
+        padding-right: 4rem;
+    }
+    .aside {
+        flex: 0.28;
+    }
+}
+
+
+@media (max-width: 1199px) {
+ 
+}
+
+
+@media (max-width: 991px) {
+   
+}
+
+
+@media (max-width: 767px) {
+
+    html {
+        font-size: 14px;
+    }
+
+.site-header {
+    padding: 1rem 0;
+}
+
+}
