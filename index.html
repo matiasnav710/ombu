@@ -23,6 +23,7 @@
 
 <body>
 
+
     <!-- Header -->
     <header class="site-header">
         <div class="container">
@@ -58,11 +59,13 @@
             <!-- Text Block -->
             <section class="mb-40">
                 <h3 class="d-flex align-items-center">
-                    <span class="mr-10"><img width="30" src="content/images/fullscreen.svg" alt="Fullscreen Icon" /></span>
+                    <span class="mr-10"><img width="30" src="content/images/fullscreen.svg"
+                            alt="Fullscreen Icon" /></span>
                     Full Screen
                 </h3>
                 <h4 class="mb-0">Data attribute: <i>none</i></h4>
-                <p class="my-30">In Panel UI, the default browser display of content is referred to as Full Screen. Links with no data
+                <p class="my-30">In Panel UI, the default browser display of content is referred to as Full Screen.
+                    Links with no data
                     attribute retain the default browser behavior of the new content fully replacing the previous
                     content. Panel UI offers multiple ways a user can transition the view of content from a Panel or
                     Split View to Full Screen.</p>
@@ -75,10 +78,22 @@
                 <h4>Examples</h4>
                 <div class="box d-inline-block">
                     <ul class="list-unstyled my-0">
-                        <li><a href="#">List</a></li>
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#">Item 2</a></li>
-                        <li><a href="#">Form</a></li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;">List</a>
+                            <div class="sidebar-toggle__content">List Content.</div>
+                        </li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;">Item 1</a>
+                            <div class="sidebar-toggle__content">Item 1 Content.</div>
+                        </li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;">Item 2</a>
+                            <div class="sidebar-toggle__content">Item 2 Content.</div>
+                        </li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;">Form</a>
+                            <div class="sidebar-toggle__content">Form Content</div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -91,9 +106,14 @@
                     Panel
                 </h3>
                 <h4 class="mb-0">Data attribute: <i>data-panel-open</i></h4>
-                <p class="my-30">Links with the attribute data-panel-open present their content in a modal sidebar, or panel, that slides in from the right of the current view. While a panel is shown the background content is not interactive but remains visible to maintain the context of the current task. An open panel can be expanded into a Full Screen view by selecting the Full Screen action in the panel header.</p>
+                <p class="my-30">Links with the attribute data-panel-open present their content in a modal sidebar, or
+                    panel, that slides in from the right of the current view. While a panel is shown the background
+                    content is not interactive but remains visible to maintain the context of the current task. An open
+                    panel can be expanded into a Full Screen view by selecting the Full Screen action in the panel
+                    header.</p>
                 <h4>Use Case</h4>
-                <p>The best use for a panel is to offer quick looks at data and allow the user to perform simple tasks like object creation.</p>
+                <p>The best use for a panel is to offer quick looks at data and allow the user to perform simple tasks
+                    like object creation.</p>
                 <ul>
                     <li>Pointers to objects</li>
                     <li>Object creation actions</li>
@@ -102,10 +122,30 @@
                 <h4>Examples</h4>
                 <div class="box d-inline-block">
                     <ul class="list-unstyled my-0">
-                        <li><a href="#" class="d-inline-flex align-items-center">List <span class="ml-10"><img width="15" src="content/images/panel-open.svg" alt="Panel Open Icon"></span></a></li>
-                        <li><a href="#" class="d-inline-flex align-items-center">Item 1 <span class="ml-10"><img width="15" src="content/images/panel-open.svg" alt="Panel Open Icon"></span></a></li>
-                        <li><a href="#" class="d-inline-flex align-items-center">Item 2 <span class="ml-10"><img width="15" src="content/images/panel-open.svg" alt="Panel Open Icon"></span></a></li>
-                        <li><a href="#" class="d-inline-flex align-items-center">Form <span class="ml-10"><img width="15" src="content/images/panel-open.svg" alt="Panel Open Icon"></span></a></li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;" class="d-inline-flex align-items-center">List <span
+                                    class="ml-10"><img width="15" src="content/images/panel-open.svg"
+                                        alt="Panel Open Icon"></span></a>
+                            <div class="sidebar-toggle__content">Panel List Content.</div>
+                        </li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;" class="d-inline-flex align-items-center">Item 1 <span
+                                    class="ml-10"><img width="15" src="content/images/panel-open.svg"
+                                        alt="Panel Open Icon"></span></a>
+                            <div class="sidebar-toggle__content">Panel Item 1 Content.</div>
+                        </li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;" class="d-inline-flex align-items-center">Item 2 <span
+                                    class="ml-10"><img width="15" src="content/images/panel-open.svg"
+                                        alt="Panel Open Icon"></span></a>
+                            <div class="sidebar-toggle__content">Panel Item 2 Content.</div>
+                        </li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;" class="d-inline-flex align-items-center">Form <span
+                                    class="ml-10"><img width="15" src="content/images/panel-open.svg"
+                                        alt="Panel Open Icon"></span></a>
+                            <div class="sidebar-toggle__content">Panel Form Content.</div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -114,23 +154,48 @@
             <!-- Text Block -->
             <section class="mb-40">
                 <h3 class="d-flex align-items-center">
-                    <span class="mr-10"><img width="30" src="content/images/split-view.svg" alt="Split View Icon" /></span>
+                    <span class="mr-10"><img width="30" src="content/images/split-view.svg"
+                            alt="Split View Icon" /></span>
                     Split View
                 </h3>
                 <h4 class="mb-0">Data attribute: <i>data-splitview-open</i></h4>
-                <p class="my-30">Links with the attribute data-splitview-open cause the view to be split in half, with the current content being presented on the left and the new content on the right. Both sides of the screen are interactive. In a split view, all links behave like the browser default, no matter the data attribute associated with them. </p>
+                <p class="my-30">Links with the attribute data-splitview-open cause the view to be split in half, with
+                    the current content being presented on the left and the new content on the right. Both sides of the
+                    screen are interactive. In a split view, all links behave like the browser default, no matter the
+                    data attribute associated with them. </p>
                 <h4>Use Case</h4>
-                <p>The best use for a split view is for complex tasks that involve comparing or translating data from one view to another.</p>
+                <p>The best use for a split view is for complex tasks that involve comparing or translating data from
+                    one view to another.</p>
                 <ul>
                     <li>Tabs (Split View enables users to easily compare the content of two tabs side-by-side)</li>
                 </ul>
                 <h4>Examples</h4>
                 <div class="box d-inline-block">
                     <ul class="list-unstyled my-0">
-                        <li><a href="#" class="d-inline-flex align-items-center">List <span class="ml-10"><img width="15" src="content/images/split-view2.svg" alt="Split View Icon"></span></a></li>
-                        <li><a href="#" class="d-inline-flex align-items-center">Item 1 <span class="ml-10"><img width="15" src="content/images/split-view2.svg" alt="Split View Icon"></span></a></li>
-                        <li><a href="#" class="d-inline-flex align-items-center">Item 2 <span class="ml-10"><img width="15" src="content/images/split-view2.svg" alt="Split View Icon"></span></a></li>
-                        <li><a href="#" class="d-inline-flex align-items-center">Form <span class="ml-10"><img width="15" src="content/images/split-view2.svg" alt="Split View Icon"></span></a></li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;" class="d-inline-flex align-items-center">List <span
+                                    class="ml-10"><img width="15" src="content/images/split-view2.svg"
+                                        alt="Split View Icon"></span></a>
+                            <div class="sidebar-toggle__content">Split View List Content.</div>
+                        </li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;" class="d-inline-flex align-items-center">Item 1 <span
+                                    class="ml-10"><img width="15" src="content/images/split-view2.svg"
+                                        alt="Split View Icon"></span></a>
+                            <div class="sidebar-toggle__content">Split View Item 1 Content.</div>
+                        </li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;" class="d-inline-flex align-items-center">Item 2 <span
+                                    class="ml-10"><img width="15" src="content/images/split-view2.svg"
+                                        alt="Split View Icon"></span></a>
+                            <div class="sidebar-toggle__content">Split View Item 2 Content.</div>
+                        </li>
+                        <li data-target=".sidebar" class="sidebar-toggle">
+                            <a href="javascript:;" class="d-inline-flex align-items-center">Form <span
+                                    class="ml-10"><img width="15" src="content/images/split-view2.svg"
+                                        alt="Split View Icon"></span></a>
+                            <div class="sidebar-toggle__content">Split View Form Content.</div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -139,7 +204,7 @@
             <!-- Text Block -->
             <section class="mb-40">
                 <h3>Implementation Guide</h3>
-                <p class="my-30">TBD</p>
+                <p>TBD</p>
             </section>
             <!-- Text Block -->
 
@@ -156,8 +221,54 @@
         </aside>
         <!-- Aside -->
 
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <header class="sidebar__header d-flex align-items-center justify-content-between">
+                <strong class="sidebar__title">Item 1</strong>
+                <i class="sidebar__close">&times;</i>
+            </header>
+            <div class="sidebar__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </aside>
+        <!-- Sidebar -->
+
+        <!-- FS Overlay -->
+        <div class="fs-overlay"></div>
+        <!-- FS Overlay -->
+
     </div>
     <!-- Body Content -->
+
+    <!-- JS -->
+    <script>
+        function closeSidebar() {
+            document.body.classList.remove('sidebar-active');
+        }
+
+        document.querySelectorAll('.sidebar-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                const sidebar = document.querySelector(this.getAttribute('data-target'));
+                const title = this.querySelector('a').textContent;
+                const content = this.querySelector('.sidebar-toggle__content').textContent;
+
+                sidebar.querySelector('.sidebar__title').textContent = title;
+                sidebar.querySelector('.sidebar__content').innerHTML = content;
+
+                document.body.classList.add('sidebar-active');
+            });
+        });
+
+        document.querySelector('.sidebar__close').addEventListener('click', closeSidebar);
+
+        document.querySelector('.fs-overlay').addEventListener('click', closeSidebar);
+
+    </script>
+    <!-- JS -->
 
 </body>
 

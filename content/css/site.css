@@ -79,9 +79,8 @@ a {
 
 
 a:focus,
-a:hover,
-a:active {
-    text-decoration: none;
+a:hover {
+    text-decoration: underline;
 }
 
 ul,
@@ -146,6 +145,68 @@ img {
 
 
 /* ==========================================================================
+	Sidebar
+========================================================================== */
+
+.sidebar, .fs-overlay {
+    position: fixed;
+    right: -150%;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: 350ms ease-in-out;
+}
+
+.sidebar-active .sidebar, .sidebar-active .fs-overlay {
+    right: 0;
+    display: block;
+}
+
+.sidebar {
+    background-color: #fff;
+    max-width: 40rem;
+    box-shadow: 0 2px 10px rgba(135, 156, 171,0.5);
+    z-index: 100;
+}
+
+.sidebar-toggle__content {
+    display: none;
+}
+
+.fs-overlay {
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99;
+    display: none;
+    cursor: pointer;
+}
+
+.sidebar__header, .sidebar__footer {
+    min-height: 4rem;
+    padding: 1rem 2rem;
+}
+
+.sidebar__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.sidebar__close {
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.sidebar__content {
+    overflow-y: auto;
+    min-height: calc(100vh - 8rem);
+    padding: 2rem 3rem;
+    border-top: 1px solid #DEE6EB;
+    border-bottom: 1px solid #DEE6EB;
+}
+
+
+/* ==========================================================================
 	Reusable Generic Classes
 ========================================================================== */
 
@@ -168,6 +229,10 @@ img {
 
 .align-items-center {
     align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
 }
 
 .d-inline-block {
@@ -215,7 +280,7 @@ img {
 	Media Queries
 ========================================================================== */
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .body-content {
         display: flex;
     }
